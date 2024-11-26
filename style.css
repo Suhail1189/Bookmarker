@@ -1,0 +1,13 @@
+body{
+    background-color: #f5e9dc;
+    font-family: Arial, sans-serif;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    color: #333;
+    isolation: isolate;
+}
+.rules{
+    color: #dc3545;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-4 fw-bold">Bookmarker</h1>
+        <hr>
+        <p class="text-center text-success mb-4 fw-bold fs-4">📑 Bookmark your favorite sites 📑</p>
+        <div>
+            <div class="w-100">
+                <label for="bookmarkName" class="form-label fw-bold">🔖 Site Name</label>
+                <input type="text" id="bookmarkName" class="form-control" placeholder="Bookmark Name">
+            </div>
+            <div class="w-100 ">
+                <label for="bookmarkURL" class="form-label fw-bold">🔗 Site URL</label>
+                <input type="text" id="bookmarkURL" class="form-control" placeholder="Website URL">
+            </div>
+            <div class="text-center">
+                <button id="submit" class=" btn btn-danger m-3 px-5">Submit</button>
+            </div>
+        </div>
+        <hr>
+        <p id="errorMessage" class="rules d-none">URL must start with "http://" or "https://".</p>
+
+        <table class="table table-bordered table-striped">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col">Index</th>
+                    <th scope="col">Website Name</th>
+                    <th scope="col">Visit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="bookmarkTableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
